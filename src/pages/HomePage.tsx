@@ -19,6 +19,7 @@ import {
   Sparkles,
   MapPin,
   ExternalLink,
+  Clock,
 } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 import { SEOHead } from "../components/SEOHead";
@@ -26,6 +27,7 @@ import { BRAND, COMPLIANCE, SAUDI_CITIES, buildWhatsAppUrl, buildCallUrl } from 
 import { SERVICES_DATA } from "../data/servicesData";
 import { POPULAR_PACKAGES } from "../data/packagesData";
 import { RiyadhSkylineVisual } from "../components/visuals/RiyadhSkylineVisual";
+import { HeroSlideshow } from "../components/HeroSlideshow";
 import { ZatcaInvoiceVisual } from "../components/visuals/ZatcaInvoiceVisual";
 import { FleetTelematicsVisual } from "../components/visuals/FleetTelematicsVisual";
 import { getOrganizationSchema, getWebSiteSchema, getProfessionalServiceSchema, getFAQPageSchema } from "../data/seoSchemas";
@@ -189,9 +191,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenDemoModal }) => {
               </div>
             </div>
 
-            {/* Right Column (Hero Visual Anchor) */}
+            {/* Right Column (Hero Visual Anchor: Dual-Resolution Photo Slideshow) */}
             <div className="lg:col-span-5 2xl:col-span-5 w-full overflow-hidden">
-              <RiyadhSkylineVisual />
+              <HeroSlideshow />
             </div>
           </div>
         </div>
@@ -436,48 +438,54 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenDemoModal }) => {
               return (
                 <div
                   key={pkg.id}
-                  className={`relative rounded-3xl p-8 flex flex-col justify-between border transition-all duration-300 ${
+                  className={`relative rounded-3xl p-5 sm:p-7 lg:p-8 2xl:p-10 flex flex-col justify-between border transition-all duration-300 ${
                     isHighlight
                       ? "bg-gradient-to-b from-slate-900 to-blue-950 text-white border-blue-900 shadow-xl"
                       : "bg-slate-50/70 hover:bg-white text-slate-900 border-slate-200/90 hover:border-blue-200 shadow-xs hover:shadow-lg"
                   }`}
                 >
-                  {/* Top Badge */}
-                  <div className="space-y-4">
-                    <div className="flex items-center justify-between">
+                  {/* Top Badge & Turnaround Duration */}
+                  <div className="space-y-4 sm:space-y-5">
+                    <div className="flex flex-col xs:flex-row sm:flex-row sm:items-center justify-between gap-2.5 pb-1">
                       <span
-                        className={`text-xs font-bold px-3 py-1 rounded-full ${
+                        className={`inline-flex items-center self-start text-xs font-bold px-3 py-1 rounded-full ${
                           isHighlight
-                            ? "bg-amber-400 text-slate-950 font-bold"
-                            : "bg-blue-100 text-blue-800"
+                            ? "bg-amber-400 text-slate-950 font-bold shadow-xs"
+                            : "bg-blue-100 text-blue-800 font-semibold"
                         }`}
                       >
                         {isAr ? pkg.badgeAr : pkg.badgeEn}
                       </span>
                       <span
-                        className={`text-xs font-mono ${
-                          isHighlight ? "text-slate-400" : "text-slate-500"
+                        className={`inline-flex items-center gap-1.5 self-start sm:self-auto text-xs font-mono px-2.5 py-1 rounded-lg border ${
+                          isHighlight
+                            ? "text-amber-200/90 bg-white/10 border-white/15"
+                            : "text-slate-600 bg-white border-slate-200/90 shadow-2xs"
                         }`}
                       >
-                        {isAr ? pkg.turnaroundAr : pkg.turnaroundEn}
+                        <Clock className="w-3.5 h-3.5 shrink-0 opacity-80" />
+                        <span>{isAr ? pkg.turnaroundAr : pkg.turnaroundEn}</span>
                       </span>
                     </div>
 
-                    <h3
-                      className={`text-2xl font-bold tracking-tight ${
-                        isHighlight ? "text-white" : "text-slate-900"
-                      }`}
-                    >
-                      {isAr ? pkg.nameAr : pkg.nameEn}
-                    </h3>
+                    {/* Heading and Tagline with proper breathing room */}
+                    <div className="space-y-2 pt-1">
+                      <h3
+                        className={`text-xl sm:text-2xl font-extrabold tracking-tight leading-snug ${
+                          isHighlight ? "text-white" : "text-slate-900"
+                        }`}
+                      >
+                        {isAr ? pkg.nameAr : pkg.nameEn}
+                      </h3>
 
-                    <p
-                      className={`text-xs sm:text-sm leading-relaxed ${
-                        isHighlight ? "text-slate-300" : "text-slate-600"
-                      }`}
-                    >
-                      {isAr ? pkg.taglineAr : pkg.taglineEn}
-                    </p>
+                      <p
+                        className={`text-xs sm:text-sm leading-relaxed ${
+                          isHighlight ? "text-slate-300" : "text-slate-600"
+                        }`}
+                      >
+                        {isAr ? pkg.taglineAr : pkg.taglineEn}
+                      </p>
+                    </div>
 
                     {/* Features List */}
                     <div className="pt-4 border-t border-slate-200/30 space-y-2.5">

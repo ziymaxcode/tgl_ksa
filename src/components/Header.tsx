@@ -40,12 +40,12 @@ export const Header: React.FC<HeaderProps> = ({ onOpenDemoModal }) => {
                 : "Book a FREE online demo for Saudi businesses · ZATCA Phase 2 & Fleet Ready"}
             </span>
             {/* Mobile Message without ellipsis or clipping */}
-            <span className="sm:hidden text-[11px] font-medium whitespace-nowrap">
+            <span className="sm:hidden text-[11px] font-medium truncate">
               {isAr ? "عرض تجريبي مجاني للشركات" : "Free Demo for Saudi SMEs"}
             </span>
           </div>
 
-          <div className="flex items-center gap-3 sm:gap-4 shrink-0">
+          <div className="flex items-center gap-2.5 sm:gap-4 shrink-0">
             <button
               onClick={() => onOpenDemoModal()}
               className="font-semibold underline underline-offset-4 hover:text-blue-100 flex items-center gap-1 transition-colors text-[11px] sm:text-xs xl:text-sm shrink-0 cursor-pointer"
@@ -70,20 +70,20 @@ export const Header: React.FC<HeaderProps> = ({ onOpenDemoModal }) => {
 
       {/* 2. Main Navigation Bar (3-Zone Contract) */}
       <div className="site-container">
-        <div className="flex items-center justify-between gap-8 h-18 xl:h-22">
+        <div className="flex items-center justify-between gap-2 sm:gap-6 lg:gap-8 h-16 sm:h-18 xl:h-22">
           {/* Zone 1: Single Brand Wordmark element */}
           <Link
             to={getLocalizedPath("/")}
-            className="flex items-center gap-3 shrink-0 group focus:outline-hidden"
+            className="flex items-center gap-2 sm:gap-3 min-w-0 shrink group focus:outline-hidden"
           >
-            <div className="w-10 h-10 xl:w-12 xl:h-12 rounded-2xl bg-gradient-to-br from-blue-700 to-blue-900 text-white flex items-center justify-center font-bold text-lg xl:text-xl shadow-md group-hover:scale-105 transition-transform">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 xl:w-12 xl:h-12 rounded-xl sm:rounded-2xl bg-gradient-to-br from-blue-700 to-blue-900 text-white flex items-center justify-center font-bold text-base sm:text-lg xl:text-xl shadow-md group-hover:scale-105 transition-transform shrink-0">
               <span>TGL</span>
             </div>
-            <div className="flex flex-col">
-              <span className="text-lg xl:text-xl font-extrabold tracking-tight text-slate-900 group-hover:text-blue-700 transition-colors">
+            <div className="flex flex-col min-w-0">
+              <span className="text-sm sm:text-lg xl:text-xl font-extrabold tracking-tight text-slate-900 group-hover:text-blue-700 transition-colors truncate">
                 TGL Technologies
               </span>
-              <span className="text-[10px] xl:text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+              <span className="text-[9px] sm:text-[10px] xl:text-[11px] font-semibold text-slate-500 uppercase tracking-wider truncate">
                 {isAr ? "فرع المملكة العربية السعودية" : "Saudi Arabia Vertical"}
               </span>
             </div>
@@ -128,21 +128,22 @@ export const Header: React.FC<HeaderProps> = ({ onOpenDemoModal }) => {
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="flex items-center gap-2 sm:hidden">
+          {/* Mobile Action Controls */}
+          <div className="flex items-center gap-1.5 sm:gap-2 sm:hidden shrink-0">
             <button
               onClick={toggleLanguage}
-              className="p-2 rounded-xl text-xs font-bold text-slate-700 bg-slate-100"
+              className="px-2.5 py-1.5 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 active:scale-95 transition-all flex items-center gap-1 cursor-pointer"
               aria-label="Switch Language"
             >
-              {isAr ? "EN" : "عربي"}
+              <Globe className="w-3 h-3 text-slate-500" />
+              <span>{isAr ? "EN" : "عربي"}</span>
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-xl text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition-colors"
+              className="p-1.5 sm:p-2 rounded-lg text-slate-700 hover:text-slate-900 hover:bg-slate-100 active:scale-95 transition-colors cursor-pointer"
               aria-label="Open menu"
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>

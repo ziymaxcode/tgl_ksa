@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="zatcaBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#091428"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#061b2b"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#zatcaBg)"/>
+  <circle cx="1000" cy="180" r="300" fill="#059669" opacity="0.1" filter="blur(80px)"/>
+  <circle cx="200" cy="600" r="250" fill="#2563eb" opacity="0.1" filter="blur(70px)"/>
+
+  <!-- Top Ribbon -->
+  <g transform="translate(60, 50)">
+    <rect width="210" height="34" rx="8" fill="#065f46" fill-opacity="0.6" stroke="#10b981" stroke-width="1.5"/>
+    <circle cx="18" cy="17" r="5" fill="#34d399"/>
+    <text x="35" y="22" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="13" font-weight="700">ZATCA PHASE 2 CERTIFIED</text>
+    <text x="1080" y="24" fill="#94a3b8" font-family="monospace" font-size="14" text-anchor="end">API STATUS: CONNECTED (PRODUCTION)</text>
+  </g>
+
+  <!-- Main Dashboard Card -->
+  <g transform="translate(60, 110)">
+    <rect width="1080" height="570" rx="24" fill="#0f172a" fill-opacity="0.95" stroke="#1e293b" stroke-width="2"/>
+    
+    <!-- Header of Dashboard -->
+    <rect width="1080" height="70" rx="24" fill="#1e293b" fill-opacity="0.8"/>
+    <text x="35" y="44" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">TGL FATOORA Gateway · Enterprise Clearance Hub</text>
+    <rect x="880" y="18" width="165" height="34" rx="17" fill="#059669" fill-opacity="0.2" stroke="#10b981" stroke-width="1"/>
+    <text x="962" y="40" fill="#34d399" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Live ZATCA Clearance</text>
+
+    <!-- Metrics Row (3 Cards) -->
+    <g transform="translate(35, 100)">
+      <rect width="310" height="110" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="20" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">INVOICES CLEARED (TODAY)</text>
+      <text x="20" y="75" fill="#ffffff" font-family="system-ui, sans-serif" font-size="34" font-weight="800">1,428</text>
+      <text x="20" y="96" fill="#34d399" font-family="system-ui, sans-serif" font-size="12">✓ 100% Passed Cryptographic Signing</text>
+    </g>
+
+    <g transform="translate(385, 100)">
+      <rect width="310" height="110" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="20" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">AVERAGE LATENCY</text>
+      <text x="20" y="75" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="34" font-weight="800">42 ms</text>
+      <text x="20" y="96" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Direct Saudi Cloud Node Connection</text>
+    </g>
+
+    <g transform="translate(735, 100)">
+      <rect width="310" height="110" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="20" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">STANDARD &amp; SIMPLIFIED</text>
+      <text x="20" y="75" fill="#a855f7" font-family="system-ui, sans-serif" font-size="34" font-weight="800">B2B + B2C</text>
+      <text x="20" y="96" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">UBL 2.1 XML &amp; PDF/A-3 Compliant</text>
+    </g>
+
+    <!-- Bottom Split: Live Invoices Table & QR Preview -->
+    <g transform="translate(35, 240)">
+      <!-- Table Container -->
+      <rect width="660" height="290" rx="16" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
+      <text x="25" y="35" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Recent ZATCA Submissions</text>
+      
+      <!-- Table Row 1 -->
+      <g transform="translate(25, 60)">
+        <text x="0" y="20" fill="#94a3b8" font-family="monospace" font-size="13">INV-2026-0891</text>
+        <text x="170" y="20" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13">Al-Yamamah Trading</text>
+        <text x="380" y="20" fill="#ffffff" font-family="monospace" font-size="13">48,250.00 SAR</text>
+        <rect x="520" y="4" width="90" height="24" rx="6" fill="#065f46" fill-opacity="0.7"/>
+        <text x="565" y="20" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">CLEARED</text>
+      </g>
+      <line x1="25" y1="98" x2="635" y2="98" stroke="#334155" stroke-width="1"/>
+
+      <!-- Table Row 2 -->
+      <g transform="translate(25, 115)">
+        <text x="0" y="20" fill="#94a3b8" font-family="monospace" font-size="13">INV-2026-0890</text>
+        <text x="170" y="20" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13">Najd Logistics Est.</text>
+        <text x="380" y="20" fill="#ffffff" font-family="monospace" font-size="13">112,600.00 SAR</text>
+        <rect x="520" y="4" width="90" height="24" rx="6" fill="#065f46" fill-opacity="0.7"/>
+        <text x="565" y="20" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">CLEARED</text>
+      </g>
+      <line x1="25" y1="153" x2="635" y2="153" stroke="#334155" stroke-width="1"/>
+
+      <!-- Table Row 3 -->
+      <g transform="translate(25, 170)">
+        <text x="0" y="20" fill="#94a3b8" font-family="monospace" font-size="13">INV-2026-0889</text>
+        <text x="170" y="20" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13">Red Sea Contracting</text>
+        <text x="380" y="20" fill="#ffffff" font-family="monospace" font-size="13">34,180.00 SAR</text>
+        <rect x="520" y="4" width="90" height="24" rx="6" fill="#065f46" fill-opacity="0.7"/>
+        <text x="565" y="20" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">CLEARED</text>
+      </g>
+      <line x1="25" y1="208" x2="635" y2="208" stroke="#334155" stroke-width="1"/>
+
+      <!-- Table Row 4 -->
+      <g transform="translate(25, 225)">
+        <text x="0" y="20" fill="#94a3b8" font-family="monospace" font-size="13">INV-2026-0888</text>
+        <text x="170" y="20" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13">Eastern Industrial Supplies</text>
+        <text x="380" y="20" fill="#ffffff" font-family="monospace" font-size="13">89,450.00 SAR</text>
+        <rect x="520" y="4" width="90" height="24" rx="6" fill="#065f46" fill-opacity="0.7"/>
+        <text x="565" y="20" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">REPORTED</text>
+      </g>
+    </g>
+
+    <!-- Right QR & Hash Card -->
+    <g transform="translate(735, 240)">
+      <rect width="310" height="290" rx="16" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1"/>
+      <text x="20" y="35" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Live Phase 2 Cryptographic Seal</text>
+      
+      <!-- Simulated ZATCA QR Code -->
+      <g transform="translate(20, 55)">
+        <rect width="130" height="130" rx="10" fill="#ffffff"/>
+        <!-- QR Elements -->
+        <rect x="15" y="15" width="30" height="30" fill="#0f172a"/>
+        <rect x="22" y="22" width="16" height="16" fill="#ffffff"/>
+        <rect x="85" y="15" width="30" height="30" fill="#0f172a"/>
+        <rect x="92" y="22" width="16" height="16" fill="#ffffff"/>
+        <rect x="15" y="85" width="30" height="30" fill="#0f172a"/>
+        <rect x="22" y="92" width="16" height="16" fill="#ffffff"/>
+        <rect x="55" y="25" width="18" height="18" fill="#0f172a"/>
+        <rect x="55" y="55" width="20" height="20" fill="#0f172a"/>
+        <rect x="85" y="85" width="25" height="25" fill="#0f172a"/>
+        <rect x="60" y="95" width="15" height="15" fill="#0f172a"/>
+      </g>
+
+      <g transform="translate(165, 75)">
+        <text x="0" y="0" fill="#34d399" font-family="system-ui, sans-serif" font-size="12" font-weight="700">✓ Cryptographic Stamp</text>
+        <text x="0" y="25" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">ECDSA secp256k1</text>
+        <text x="0" y="50" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">SHA-256 Hash Chained</text>
+        <text x="0" y="75" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">UBL 2.1 Schema Valid</text>
+      </g>
+
+      <g transform="translate(20, 205)">
+        <rect width="270" height="65" rx="8" fill="#0b1329" stroke="#334155" stroke-width="1"/>
+        <text x="12" y="24" fill="#64748b" font-family="monospace" font-size="11">PREVIOUS INVOICE PIH HASH:</text>
+        <text x="12" y="46" fill="#38bdf8" font-family="monospace" font-size="11">NWUxYmM4OWQ1ZjZhMzExMGEx...</text>
+      </g>
+    </g>
+  </g>
+</svg>

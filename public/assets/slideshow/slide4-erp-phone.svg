@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 650" width="750" height="650">
+  <defs>
+    <linearGradient id="erpPhoneBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#091428"/>
+      <stop offset="60%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="erpCardGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="750" height="650" fill="url(#erpPhoneBg)"/>
+  <circle cx="650" cy="150" r="180" fill="#6366f1" opacity="0.15" filter="blur(60px)"/>
+  <circle cx="100" cy="500" r="150" fill="#10b981" opacity="0.12" filter="blur(50px)"/>
+
+  <!-- Top Ribbon -->
+  <g transform="translate(40, 45)">
+    <rect width="210" height="34" rx="8" fill="#312e81" fill-opacity="0.6" stroke="#6366f1" stroke-width="1.5"/>
+    <circle cx="18" cy="17" r="5" fill="#a5b4fc"/>
+    <text x="35" y="22" fill="#c7d2fe" font-family="system-ui, sans-serif" font-size="13" font-weight="700">CLOUD ERP &amp; POS</text>
+    <text x="670" y="22" fill="#a5b4fc" font-family="monospace" font-size="13" text-anchor="end">6 BRANCHES SYNCED</text>
+  </g>
+
+  <!-- Big Hero ERP Card -->
+  <g transform="translate(40, 100)">
+    <rect width="670" height="150" rx="20" fill="url(#erpCardGrad)" stroke="#334155" stroke-width="1.5"/>
+    <text x="25" y="38" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14" font-weight="700" letter-spacing="1">SAUDI BUSINESS ACCOUNTING</text>
+    <text x="25" y="85" fill="#ffffff" font-family="system-ui, sans-serif" font-size="36" font-weight="800">842,500 <tspan font-size="22" fill="#94a3b8">SAR</tspan></text>
+    <text x="25" y="122" fill="#34d399" font-family="system-ui, sans-serif" font-size="16" font-weight="600">▲ +24.6% Monthly Growth · 15% VAT Ready</text>
+  </g>
+
+  <!-- Split Metrics -->
+  <g transform="translate(40, 270)">
+    <rect width="320" height="120" rx="16" fill="url(#erpCardGrad)" stroke="#334155" stroke-width="1.5"/>
+    <text x="20" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">VAT 15% ACCRUAL</text>
+    <text x="20" y="75" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="30" font-weight="800">126,375 <tspan font-size="16" fill="#94a3b8">SAR</tspan></text>
+    <text x="20" y="100" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Auto ZATCA Return</text>
+
+    <g transform="translate(350, 0)">
+      <rect width="320" height="120" rx="16" fill="url(#erpCardGrad)" stroke="#334155" stroke-width="1.5"/>
+      <text x="20" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">RETAIL POS UNITS</text>
+      <text x="20" y="75" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="30" font-weight="800">18 Terminals</text>
+      <text x="20" y="100" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Live Barcode Cloud</text>
+    </g>
+  </g>
+
+  <!-- Multi-Branch Module List -->
+  <g transform="translate(40, 410)">
+    <rect width="670" height="190" rx="20" fill="url(#erpCardGrad)" stroke="#334155" stroke-width="1.5"/>
+    <text x="25" y="35" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Saudi Enterprise Standard Modules</text>
+    
+    <g transform="translate(25, 55)">
+      <rect width="300" height="46" rx="10" fill="#0b1329" stroke="#334155" stroke-width="1"/>
+      <text x="15" y="28" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">General Ledger &amp; Invoicing</text>
+      <text x="285" y="28" fill="#34d399" font-family="system-ui, sans-serif" font-size="12" text-anchor="end">✓</text>
+    </g>
+
+    <g transform="translate(345, 55)">
+      <rect width="300" height="46" rx="10" fill="#0b1329" stroke="#334155" stroke-width="1"/>
+      <text x="15" y="28" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">WPS Saudi Wage Payroll</text>
+      <text x="285" y="28" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12" text-anchor="end">✓</text>
+    </g>
+
+    <g transform="translate(25, 115)">
+      <rect width="300" height="46" rx="10" fill="#0b1329" stroke="#334155" stroke-width="1"/>
+      <text x="15" y="28" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Multi-Warehouse Inventory</text>
+      <text x="285" y="28" fill="#34d399" font-family="system-ui, sans-serif" font-size="12" text-anchor="end">✓</text>
+    </g>
+
+    <g transform="translate(345, 115)">
+      <rect width="300" height="46" rx="10" fill="#0b1329" stroke="#334155" stroke-width="1"/>
+      <text x="15" y="28" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Customs &amp; VAT Auditing</text>
+      <text x="285" y="28" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="12" text-anchor="end">✓</text>
+    </g>
+  </g>
+</svg>

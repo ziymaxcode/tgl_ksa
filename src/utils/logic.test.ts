@@ -96,3 +96,15 @@ test("seo: schema generators produce valid Schema.org objects", () => {
   assert.equal(faq["@type"], "FAQPage");
   assert.equal(faq.mainEntity.length, 1);
 });
+
+test("slideshow: hero slides have valid pcImage and localized content", async () => {
+  const { HERO_SLIDES } = await import("../data/heroSlidesData");
+  assert.ok(HERO_SLIDES.length >= 2, "Should have multiple slides for slideshow");
+  HERO_SLIDES.forEach((slide) => {
+    assert.ok(slide.id && slide.id.length > 0);
+    assert.ok(slide.pcImage && slide.pcImage.startsWith("/assets/"));
+    assert.ok(slide.titleEn && slide.titleEn.length > 0);
+    assert.ok(slide.titleAr && slide.titleAr.length > 0);
+  });
+});
+

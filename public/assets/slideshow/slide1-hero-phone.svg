@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 650" width="750" height="650">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1329"/>
+      <stop offset="60%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="blueAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="750" height="650" fill="url(#bgGrad)"/>
+  <circle cx="200" cy="150" r="220" fill="#2563eb" opacity="0.12" filter="blur(60px)"/>
+  <circle cx="580" cy="500" r="180" fill="#4f46e5" opacity="0.15" filter="blur(50px)"/>
+
+  <!-- Top Badges -->
+  <g transform="translate(40, 45)">
+    <circle cx="10" cy="12" r="6" fill="#10b981"/>
+    <text x="26" y="16" fill="#cbd5e1" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" letter-spacing="1">RIYADH · JEDDAH · DAMMAM</text>
+    <rect x="490" y="-4" width="180" height="34" rx="8" fill="#1e3a8a" fill-opacity="0.6" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="580" y="18" fill="#93c5fd" font-family="monospace" font-size="14" font-weight="700" text-anchor="middle">ZATCA &amp; WASL READY</text>
+  </g>
+
+  <!-- Mobile Stacked Card 1: Remote Delivery -->
+  <g transform="translate(40, 105)">
+    <rect width="670" height="135" rx="18" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5"/>
+    <text x="24" y="36" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">SAUDI COMMERCIAL COVERAGE</text>
+    <text x="24" y="78" fill="#ffffff" font-family="system-ui, sans-serif" font-size="32" font-weight="800">100% Remote Delivery</text>
+    <text x="24" y="112" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="16">Zero setup delays across all 13 Saudi provinces with rapid Sun–Thu support.</text>
+  </g>
+
+  <!-- Mobile Stacked Card 2: Compliance Engine -->
+  <g transform="translate(40, 260)">
+    <rect width="670" height="135" rx="18" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5"/>
+    <text x="24" y="36" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">COMPLIANCE ENGINE</text>
+    <text x="24" y="78" fill="#34d399" font-family="system-ui, sans-serif" font-size="32" font-weight="800">Phase 2 FATOORA</text>
+    <text x="24" y="112" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="16">UBL 2.1 XML clearance, cryptographic signing &amp; live QR generation.</text>
+  </g>
+
+  <!-- Stylized Riyadh Skyline Silhouette -->
+  <g transform="translate(40, 420)">
+    <path d="M 0 170 C 180 166, 490 166, 670 170" stroke="#3b82f6" stroke-width="3"/>
+    <!-- Kingdom Centre -->
+    <path d="M 220 170 L 235 25 Q 260 5 285 25 L 300 170 Z" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <path d="M 245 45 Q 260 65 275 45 L 270 26 Q 260 12 250 26 Z" fill="#0b1329" stroke="#93c5fd" stroke-width="1.5"/>
+    <!-- Al Faisaliyah -->
+    <path d="M 400 170 L 430 40 L 460 170 Z" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="430" cy="65" r="13" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
+    <line x1="430" y1="40" x2="430" y2="10" stroke="#f59e0b" stroke-width="3"/>
+    <!-- Financial Highrises -->
+    <polygon points="120,170 130,70 170,85 180,170" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+    <polygon points="500,170 515,65 555,80 570,170" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <!-- Transit Points -->
+    <circle cx="150" cy="168" r="5" fill="#60a5fa"/>
+    <circle cx="370" cy="167" r="5" fill="#38bdf8"/>
+    <circle cx="535" cy="168" r="5" fill="#fbbf24"/>
+  </g>
+
+  <!-- Bottom Label -->
+  <g transform="translate(40, 615)">
+    <text x="0" y="0" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Riyadh Commercial Skyline &amp; Technology Hub</text>
+    <text x="670" y="0" fill="#64748b" font-family="monospace" font-size="14" text-anchor="end">Vision 2030 SME Solutions</text>
+  </g>
+</svg>

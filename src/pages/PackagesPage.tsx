@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { CheckCircle2, ArrowRight, ShieldCheck, Sparkles, MessageSquare, ChevronDown } from "lucide-react";
+import { CheckCircle2, ArrowRight, ShieldCheck, Sparkles, MessageSquare, ChevronDown, Clock } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 import { SEOHead } from "../components/SEOHead";
 import { LeadForm } from "../components/LeadForm";
@@ -104,33 +104,42 @@ export const PackagesPage: React.FC<PackagesPageProps> = ({ onOpenDemoModal }) =
               return (
                 <div
                   key={pkg.id}
-                  className={`rounded-3xl p-8 flex flex-col justify-between border transition-all duration-300 ${
+                  className={`rounded-3xl p-5 sm:p-7 lg:p-8 2xl:p-10 flex flex-col justify-between border transition-all duration-300 ${
                     isDark
                       ? "bg-slate-900 text-white border-blue-900 shadow-xl"
                       : "bg-slate-50/70 text-slate-900 border-slate-200/90 hover:border-blue-200 shadow-xs"
                   }`}
                 >
-                  <div className="space-y-4 text-start">
-                    <div className="flex items-center justify-between">
+                  <div className="space-y-4 sm:space-y-5 text-start">
+                    <div className="flex flex-col xs:flex-row sm:flex-row sm:items-center justify-between gap-2.5 pb-1">
                       <span
-                        className={`text-xs font-bold px-3 py-1 rounded-full ${
-                          isDark ? "bg-amber-400 text-slate-950" : "bg-blue-100 text-blue-800"
+                        className={`inline-flex items-center self-start text-xs font-bold px-3 py-1 rounded-full ${
+                          isDark ? "bg-amber-400 text-slate-950 font-bold shadow-xs" : "bg-blue-100 text-blue-800 font-semibold"
                         }`}
                       >
                         {isAr ? pkg.badgeAr : pkg.badgeEn}
                       </span>
-                      <span className={`text-xs font-mono ${isDark ? "text-slate-400" : "text-slate-500"}`}>
-                        {isAr ? pkg.turnaroundAr : pkg.turnaroundEn}
+                      <span
+                        className={`inline-flex items-center gap-1.5 self-start sm:self-auto text-xs font-mono px-2.5 py-1 rounded-lg border ${
+                          isDark
+                            ? "text-amber-200/90 bg-white/10 border-white/15"
+                            : "text-slate-600 bg-white border-slate-200/90 shadow-2xs"
+                        }`}
+                      >
+                        <Clock className="w-3.5 h-3.5 shrink-0 opacity-80" />
+                        <span>{isAr ? pkg.turnaroundAr : pkg.turnaroundEn}</span>
                       </span>
                     </div>
 
-                    <h2 className={`text-2xl font-bold tracking-tight ${isDark ? "text-white" : "text-slate-900"}`}>
-                      {isAr ? pkg.nameAr : pkg.nameEn}
-                    </h2>
+                    <div className="space-y-2 pt-1">
+                      <h2 className={`text-xl sm:text-2xl font-extrabold tracking-tight leading-snug ${isDark ? "text-white" : "text-slate-900"}`}>
+                        {isAr ? pkg.nameAr : pkg.nameEn}
+                      </h2>
 
-                    <p className={`text-xs sm:text-sm leading-relaxed ${isDark ? "text-slate-300" : "text-slate-600"}`}>
-                      {isAr ? pkg.taglineAr : pkg.taglineEn}
-                    </p>
+                      <p className={`text-xs sm:text-sm leading-relaxed ${isDark ? "text-slate-300" : "text-slate-600"}`}>
+                        {isAr ? pkg.taglineAr : pkg.taglineEn}
+                      </p>
+                    </div>
 
                     <div className="pt-4 border-t border-slate-200/30 space-y-2.5">
                       <div className={`text-xs font-bold uppercase tracking-wider ${isDark ? "text-amber-300" : "text-slate-500"}`}>

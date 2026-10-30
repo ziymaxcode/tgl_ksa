@@ -1,0 +1,6 @@
+{
+  "name": "TGL Technologies KSA – Saudi Arabia Business Software & Fleet Solutions",
+  "description": "ZATCA E-Invoicing ERP, Websites, Branding, GPS Fleet Tracking & AI Dashcams for Saudi Arabian Businesses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

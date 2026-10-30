@@ -1,0 +1,5 @@
+# robots.txt for https://ksa.tgltechnologies.com
+User-agent: *
+Allow: /
+
+Sitemap: https://ksa.tgltechnologies.com/sitemap.xml

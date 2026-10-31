@@ -76,9 +76,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenDemoModal }) => {
             to={getLocalizedPath("/")}
             className="flex items-center gap-2 sm:gap-3 min-w-0 shrink group focus:outline-hidden"
           >
-            <div className="w-9 h-9 sm:w-10 sm:h-10 xl:w-12 xl:h-12 rounded-xl sm:rounded-2xl bg-gradient-to-br from-blue-700 to-blue-900 text-white flex items-center justify-center font-bold text-base sm:text-lg xl:text-xl shadow-md group-hover:scale-105 transition-transform shrink-0">
-              <span>TGL</span>
-            </div>
+            <div className="w-10 h-10 sm:w-10 sm:h-10 xl:w-12 xl:h-12 rounded-xl sm:rounded-2xl bg-gradient-to-br flex items-center justify-center shadow-md group-hover:scale-105 transition-transform shrink-0 overflow-hidden">
+  <img
+    src="/favicon.png"
+    alt="TGL Technologies Logo"
+    className="w-full h-full object-contain p-1"
+  />
+</div>
             <div className="flex flex-col min-w-0">
               <span className="text-sm sm:text-lg xl:text-xl font-extrabold tracking-tight text-slate-900 group-hover:text-blue-700 transition-colors truncate">
                 TGL Technologies

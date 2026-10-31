@@ -16,19 +16,30 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 xl:gap-14 2xl:gap-18">
           {/* Column 1: Brand & Positioning (2 cols wide on desktop) */}
           <div className="lg:col-span-2 space-y-4">
-            <Link to={getLocalizedPath("/")} className="flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-blue-700 to-blue-900 text-white flex items-center justify-center font-bold text-lg shadow-md">
-                <span>TGL</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-extrabold tracking-tight text-slate-900">
-                  TGL Technologies
-                </span>
-                <span className="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">
-                  {isAr ? "فرع المملكة العربية السعودية" : "Saudi Arabia Vertical"}
-                </span>
-              </div>
-            </Link>
+            <Link
+             to={getLocalizedPath("/")}
+             className="flex items-center gap-5 shrink-0 group focus:outline-hidden"
+           >
+             {/* TGL Company Logo */}
+             <div className="w-10 h-10 sm:w-10 sm:h-10 xl:w-12 xl:h-12 rounded-xl sm:rounded-2xl bg-gradient-to-br flex items-center justify-center shadow-md group-hover:scale-105 transition-transform shrink-0 overflow-hidden">
+  <img
+    src="/favicon.png"
+    alt="TGL Technologies Logo"
+    className="w-full h-full object-contain p-1"
+  />
+</div>
+           
+             {/* Company Branding */}
+             <div className="flex flex-col justify-center">
+               <span className="text-2xl xl:text-[28px] font-extrabold tracking-tight text-slate-900 group-hover:text-blue-700 transition-colors leading-tight whitespace-nowrap">
+                 TGL Technologies
+               </span>
+           
+               <span className="text-xs xl:text-sm font-semibold text-slate-500 uppercase tracking-[0.14em] mt-1">
+                 {isAr ? "فرع المملكة العربية السعودية" : "Saudi Arabia Vertical"}
+               </span>
+             </div>
+           </Link>
 
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-sm">
               {isAr

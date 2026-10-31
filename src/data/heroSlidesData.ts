@@ -70,9 +70,9 @@ export const HERO_SLIDES: HeroSlideItem[] = [
   {
     id: "slide-hero-skyline",
     // PC / Laptop Resolution: 1070x674 / 1200x750
-    pcImage: "/assets/aistudio/image_c3277afc.png",
+    pcImage: "/assets/slideshow/tgl_ksa_banner.jpeg",
     // Phone / Mobile Resolution: 750x650 mobile-centered crop
-    phoneImage: "/assets/slideshow/slide1-hero-phone.svg",
+    phoneImage: "/assets/slideshow/tgl_ksa_banner.jpeg",
     badgeEn: "Riyadh · Jeddah · Dammam",
     badgeAr: "الرياض · جدة · الدمام",
     titleEn: "100% Remote Delivery & ZATCA Ready",
